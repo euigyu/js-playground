@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI 계산기</h1>
+    체중/(신장*신장)
+    <script>
+        var input1=prompt("체중을 입력하세요");
+        var input2=prompt("신장을 입력하세요");
+        weight=Number(input1);
+        height=Number(input2);
+        var bmi=weight/(height*height/10000);
+        console.log(bmi);
+        if(bmi>18 && bmi<25){
+            console.log("당신의 BMI지수는" + bmi + "이므로 정상입니다" );
+        }
+        else if(bmi>24 && bmi<31){
+            console.log("당신의 BMI지수는" + bmi + "이므로 과체중입니다" );
+        }
+        else if(bmi>30){
+            console.log("당신의 BMI지수는" + bmi + "이므로 비만입니다" );
+        }
+        
+        </script>
+</body>
+</html>
